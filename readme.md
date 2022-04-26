@@ -1,11 +1,11 @@
-# Laravel/Lumen Docker Scaffold
+# Laravel Docker Scaffold
 
 ### **Description**
 
-This will create a dockerized stack for a Laravel/Lumen application, consisted of the following containers:
+This will create a dockerized stack for a Laravel application, consisted of the following containers:
 -  **app**, your PHP application container
 
-        Nginx, PHP7.4 PHP7.4-fpm, Composer, NPM, Node.js v10.x
+        Nginx, PHP8.1 PHP8.1-fpm, Composer, NPM, Node.js v12.x
     
 -  **mysql**, MySQL database container ([mysql](https://hub.docker.com/_/mysql/) official Docker image)
 
@@ -53,21 +53,15 @@ This will create a dockerized stack for a Laravel/Lumen application, consisted o
     **Laravel**
 
     ```
-    $ docker exec -it app bash
-    $ composer create-project --prefer-dist laravel/laravel .
-    $ nano .env
+    $ docker exec -it laradocapp bash
     $ php artisan migrate --seed
     ```
 
-    **Lumen**
+    **MySQl**
 
     ```
-    $ docker exec -it app bash
-    $ composer create-project --prefer-dist laravel/lumen .
-    $ nano .env
-    $ php artisan migrate --seed
+    $ docker exec -it mysqldb bash
     ```
-
 5. That's it! Navigate to [http://localhost](http://localhost) to access the application.
 
 **Default configuration values** 
