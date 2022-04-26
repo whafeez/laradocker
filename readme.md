@@ -48,7 +48,7 @@ This will create a dockerized stack for a Laravel application, consisted of the 
 
     This will download/build all the required images and start the stack containers. It usually takes a bit of time, so grab a cup of coffee.
 
-4. After the whole stack is up, enter the app container and install the framework of your choice:
+4. After the whole stack is up, enter the app container and run the commands of your choices:
 
     **Laravel**
 
